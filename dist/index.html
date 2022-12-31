@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HappyNewYear</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<style>
+  h1{
+            position: absolute ;
+            
+            z-index: 2;
+            left: 30%;
+            top: 33%;
+            letter-spacing: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            outline: none;
+            text-transform: uppercase;
+            color: rgba(232, 0, 79,0.5);
+            animation: h1 20s ;
+            -webkit-box-reflect: below 0.1px linear-gradient(transparent,rgb(255, 255, 255,0.5));
+            line-height: 0.5cm;
+            animation: animate 5s linear infinite;
+  }
+  @keyframes animate {
+            0%,18%,20%,40%,50%,55%,65%,70%,80%,90%,95%
+            {
+                color: rgba(232, 0, 79,0.5);;
+                box-shadow: none;
+            }
+            18.1%,20.1%,40.2%,50.1%,55.2%,65.2%,70.1%,80.1%,90.1%,95.2%,100%
+            {
+                color: rgb(252, 229, 236);
+                text-shadow: 0 0 10px #f4035f,
+                0 0 20px #f4035f,
+                0 0 40px #f4035f,
+                0 0 70px #f4035f,
+                0 0 100px #f4035f;
+            }
+        }
+</style>
+</head>
+<body>
+  
+<!-- partial:index.partial.html -->
+<canvas id="canvas">
+  
+</canvas>
+<h1>Happy New Year 2023</h1>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
